@@ -37,10 +37,10 @@ ${JSON.stringify(ctx, null, 2)}
 Generate ONLY the "${section}" section.
 
 Options:
-- sleep → How well she may sleep tonight or how rested she might feel
-- feels → Emotional and physical sensations to expect today
+- sleep → How well you may sleep tonight or how rested you might feel based on historical data
+- feels → Emotional and physical sensations you might expect today based on hormonal changes
 - productivity → Level of energy and focus to expect today
-- food → Foods that might support her wellbeing today
+- food → Foods that might support your wellbeing today
 
 Return JSON like:
 { "result": "Write one useful paragraph here." }

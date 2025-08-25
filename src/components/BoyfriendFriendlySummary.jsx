@@ -36,24 +36,12 @@ function BoyfriendForecast({ cycleDay }) {
     }
   }, [cycleDay]);
 
-  if (loading) return <p>Loading forecast...</p>;
   if (error) return <p>{error}</p>;
 
   return (
     <div className="boyfriend-forecast">
-      <h2>Support Suggestions for Cycle Day {cycleDay}</h2>
-      <div>
-        <strong>How she may be feeling:</strong> {sections.feeling}
-      </div>
-      <div>
-        <strong>How to help:</strong> {sections.help}
-      </div>
-      <div>
-        <strong>Food suggestions:</strong> {sections.food}
-      </div>
-      <div>
-        <strong>What to avoid:</strong> {sections.avoid}
-      </div>
+      <div className="mt-10 flex justify-center">
+    </div>
     </div>
   );
 }

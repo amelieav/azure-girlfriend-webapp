@@ -41,7 +41,6 @@ const AmelieForecast = ({ cycleDay }) => {
     }
   }, [cycleDay]);
 
-  if (loading) return <div>Loading forecast...</div>;
   if (error)
     return <div className="text-red-600 bg-red-100 p-4 rounded">{error}</div>;
 
@@ -50,11 +49,6 @@ const AmelieForecast = ({ cycleDay }) => {
       <h2 className="text-purple-700 font-semibold">
         🌤️ Forecast for Day {cycleDay}
       </h2>
-
-      <Section title="💤 Sleep & Nightmares" text={sections.sleep} />
-      <Section title="🧠 Feelings & Physical State" text={sections.feels} />
-      <Section title="⚡ Productivity & Energy" text={sections.productivity} />
-      <Section title="🥗 Food Suggestions" text={sections.food} />
     </div>
   );
 };
