@@ -5,13 +5,14 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "route": "getRecommendations",
-      "methods": ["get"]
+      "methods": ["get"],
+      "route": "getAmelieForecast"
     },
     {
       "type": "http",
       "direction": "out",
       "name": "res"
     }
-  ]
+  ],
+  "scriptFile": "index.js"
 }
