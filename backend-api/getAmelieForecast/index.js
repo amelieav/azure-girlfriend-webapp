@@ -11,22 +11,40 @@ function loadJSON(filePath) {
     return JSON.parse(raw);
 }
 
+let debugLog = [];
+function debug(msg, obj) {
+    if (obj !== undefined) {
+        debugLog.push(msg + ' ' + JSON.stringify(obj));
+    } else {
+        debugLog.push(msg);
+    }
+    console.log(msg, obj);
+}
+
+debug("[getAmelieForecast] Loading Daily_Guide_Amelie.json...");
 const guide = loadJSON("Daily_Guide_Amelie.json");
+debug("[getAmelieForecast] Loaded guide keys:", Object.keys(guide));
 
 module.exports = async function (context, req) {
-    const day = parseInt(req.query.cycleDay || "1");
-    const section = req.query.section;
+    debugLog = [];
+    debug("[getAmelieForecast] Function triggered");
+    try {
+        const day = parseInt(req.query.cycleDay || "1");
+        const section = req.query.section;
+        debug(`[getAmelieForecast] cycleDay: ${day}, section: ${section}`);
 
-    const dayData = guide[day] || {};
-    const ctx = {
-        productivity: dayData.Productivity,
-        feels: dayData.Feels,
-        symptoms: dayData["Physical Symptoms"],
-        sleep: dayData.Sleep,
-        override_note: dayData["Activity Notes"] || "(no override note)",
-    };
+        const dayData = guide[day] || {};
+        debug("[getAmelieForecast] dayData:", dayData);
+        const ctx = {
+            productivity: dayData.Productivity,
+            feels: dayData.Feels,
+            symptoms: dayData["Physical Symptoms"],
+            sleep: dayData.Sleep,
+            override_note: dayData["Activity Notes"] || "(no override note)",
+        };
+        debug("[getAmelieForecast] ctx:", ctx);
 
-    const prompt = `
+        const prompt = `
 You are an assistant helping Amélie understand what to expect today based on her cycle data.
 
 Today is cycle day ${day}.
@@ -45,20 +63,28 @@ Options:
 Return JSON like:
 { "result": "Write one useful paragraph here." }
 `;
+        debug("[getAmelieForecast] prompt:", prompt);
 
-    try {
         const result = await openai.chat.completions.create({
             model: "gpt-4o",
             messages: [{ role: "user", content: prompt }],
             response_format: { type: "json_object" }
         });
+        debug("[getAmelieForecast] OpenAI result:", result);
 
         const output = JSON.parse(result.choices[0].message.content);
+        debug("[getAmelieForecast] output:", output);
         context.res = { body: output };
     } catch (err) {
+        debug("[getAmelieForecast] ERROR:", err);
         context.res = {
             status: 500,
-            body: { error: err.message || "LLM error" }
+            body: {
+                error: err.message || "LLM error",
+                stack: err.stack || null,
+                details: err.response?.data || null,
+                debugLog
+            }
         };
     }
 };

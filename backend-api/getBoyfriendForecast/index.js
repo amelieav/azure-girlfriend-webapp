@@ -1,3 +1,18 @@
+let debugLog = [];
+function debug(msg, obj) {
+    if (obj !== undefined) {
+        debugLog.push(msg + ' ' + JSON.stringify(obj));
+    } else {
+        debugLog.push(msg);
+    }
+    console.log(msg, obj);
+}
+
+const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+});
+const guide = loadJSON("Daily_Guide_Amelie.json");
+console.log("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
 const fs = require("fs");
 const path = require("path");
 const { OpenAI } = require("openai");
@@ -11,35 +26,36 @@ function loadJSON(filePath) {
     return JSON.parse(raw);
 }
 
-console.log("[getBoyfriendForecast] Loading Daily_Guide_Amelie.json...");
-const guide = loadJSON("Daily_Guide_Amelie.json");
-console.log("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
+debug("[getBoyfriendForecast] Loading Daily_Guide_Amelie.json...");
+debug("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
 
 module.exports = async function (context, req) {
-    console.log("[getBoyfriendForecast] Function triggered");
-    const day = parseInt(req.query.cycleDay || "1");
-    const section = req.query.section;
-    console.log(`[getBoyfriendForecast] cycleDay: ${day}, section: ${section}`);
+    debugLog = [];
+    debug("[getBoyfriendForecast] Function triggered");
+    try {
+        const day = parseInt(req.query.cycleDay || "1");
+        const section = req.query.section;
+        debug(`[getBoyfriendForecast] cycleDay: ${day}, section: ${section}`);
 
-    const dayData = guide[day] || null;
-    console.log("[getBoyfriendForecast] dayData:", JSON.stringify(dayData));
-    if (!dayData) {
-        console.error(`[getBoyfriendForecast] No data found for cycle day ${day}`);
-        context.res = {
-            status: 404,
-            body: { error: `No data found for cycle day ${day}` }
+        const dayData = guide[day] || null;
+        debug("[getBoyfriendForecast] dayData:", dayData);
+        if (!dayData) {
+            debug(`[getBoyfriendForecast] No data found for cycle day ${day}`);
+            context.res = {
+                status: 404,
+                body: { error: `No data found for cycle day ${day}`, debugLog }
+            };
+            return;
+        }
+        const ctx = {
+            productivity: dayData.Productivity || "(no productivity data)",
+            feels: dayData.Feels || "(no feels data)",
+            symptoms: dayData["Physical Symptoms"] || "(no symptoms data)",
+            override_note: dayData["Activity Notes"] || "(no override note)",
         };
-        return;
-    }
-    const ctx = {
-        productivity: dayData.Productivity || "(no productivity data)",
-        feels: dayData.Feels || "(no feels data)",
-        symptoms: dayData["Physical Symptoms"] || "(no symptoms data)",
-        override_note: dayData["Activity Notes"] || "(no override note)",
-    };
-    console.log("[getBoyfriendForecast] ctx:", JSON.stringify(ctx));
+        debug("[getBoyfriendForecast] ctx:", ctx);
 
-    const prompt = `
+        const prompt = `
 You are a kind assistant helping a boyfriend understand how to support his girlfriend based on her cycle data.
 
 Today is cycle day ${day}.
@@ -58,27 +74,27 @@ Options:
 Return JSON like:
 { "result": "Write one clear paragraph here." }
 `;
-    console.log("[getBoyfriendForecast] prompt:", prompt);
+        debug("[getBoyfriendForecast] prompt:", prompt);
 
-    try {
         const result = await openai.chat.completions.create({
             model: "gpt-4o",
             messages: [{ role: "user", content: prompt }],
             response_format: { type: "json_object" }
         });
-        console.log("[getBoyfriendForecast] OpenAI result:", JSON.stringify(result));
+        debug("[getBoyfriendForecast] OpenAI result:", result);
 
         const output = JSON.parse(result.choices[0].message.content);
-        console.log("[getBoyfriendForecast] output:", JSON.stringify(output));
+        debug("[getBoyfriendForecast] output:", output);
         context.res = { body: output };
     } catch (err) {
-        console.error("[getBoyfriendForecast] ERROR:", err);
+        debug("[getBoyfriendForecast] ERROR:", err);
         context.res = {
             status: 500,
             body: {
                 error: err.message || "LLM error",
                 stack: err.stack || null,
-                details: err.response?.data || null
+                details: err.response?.data || null,
+                debugLog
             }
         };
     }
