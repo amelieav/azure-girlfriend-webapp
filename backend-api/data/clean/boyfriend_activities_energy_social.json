@@ -1,0 +1,554 @@
+{
+    "activities": [
+        {
+            "name": "Go for a run or jog",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium",
+                "on_period": "probably avoid",
+                "time_of_day": "morning/midday",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Swim at the pool",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "avoid",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Do a weighted workout",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium/high",
+                "on_period": "might avoid",
+                "time_of_day": "midday/afternoon/evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Go for a long walk",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "probably avoid",
+                "time_of_day": "morning/midday",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Deep clean the house",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Dance session / learn choreo (fun, energetic)",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Go out shopping in town",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Meet friends for a day out",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Attend an event (concert, festival, class)",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Travel somewhere new (day trip)",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Play a sport (badminton, tennis, football, etc.)",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "probably avoid",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Cooking a big meal or new recipe",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "DIY home project / furniture rearranging",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Do errands in town (bank, post, shopping)",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Host people at home (dinner, games, etc.)",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "would avoid"
+            }
+        },
+        {
+            "name": "Explore a new caf\u00c3\u00a9 or restaurant",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Go clubbing",
+            "conditions": {
+                "energy_level": "Extremely high",
+                "social_level": "Extremely high",
+                "on_period": "probably avoid",
+                "time_of_day": "evening",
+                "work_next_day": "Wouldn't go if I had work the next day."
+            }
+        },
+        {
+            "name": "Playing Pool or Poker with friends",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "probably avoid"
+            }
+        },
+        {
+            "name": "Go for a short walk",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium",
+                "on_period": "might avoid",
+                "time_of_day": "morning/midday",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Cook or bake something simple",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "midday/afternoon/evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Do some house cleaning",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Play board or card games",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "medium",
+                "on_period": "doesn't matter",
+                "time_of_day": "midday/afternoon/evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Do laundry (folding, sorting)",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Dance lightly to music",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Play a video game",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "medium",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Photography outdoors",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning/midday/afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Play with pet (interactive, toys, training)",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Do some watercolour or painting",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Watch TV series",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Watch a film",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Listen to a podcast",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "night",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Listen to music",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Play a cosy video game",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Knitting / Crochet / Art & Craft",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Light journaling",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Read a book",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "afternoon/evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Scroll Pinterest / Inspiration boards",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning/afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Scroll social media",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Do a puzzle (jigsaw, sudoku, crossword)",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Colouring book / Digital colouring",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "afternoon/evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Meditation",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Stretching or light yoga",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Watch YouTube",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "afternoon/evening/night",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Cuddle with person",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "afternoon/evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Cuddle with pet",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Drink tea or hot chocolate and relax",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Organise desktop or phone photos",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Casual mobile game",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "evening",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Sort out clothes",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Play with hairstyle, makeup or facepaint",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning/afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Geocaching",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "medium",
+                "on_period": "might avoid",
+                "time_of_day": "morning / midday",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Digital decluttering",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Adobe Stock image generation",
+            "conditions": {
+                "energy_level": "medium",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Activity like escape room",
+            "conditions": {
+                "energy_level": "high",
+                "social_level": "high",
+                "on_period": "doesn't matter",
+                "time_of_day": "morning / midday / afternoon",
+                "work_next_day": "doesn't matter"
+            }
+        },
+        {
+            "name": "Rubik's cube",
+            "conditions": {
+                "energy_level": "low",
+                "social_level": "low",
+                "on_period": "doesn't matter",
+                "time_of_day": "doesn't matter",
+                "work_next_day": "doesn't matter"
+            }
+        }
+    ]
+}

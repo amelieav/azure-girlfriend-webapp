@@ -1,0 +1,142 @@
+{
+  "1": {
+    "phase": "Menstruation",
+    "recommend": ["Cod", "Tuna (canned in sunflower oil)", "Eggs", "Paneer", "Dark chocolate (70%+)", "Berries", "Citrus (orange/lemon)", "Yakult", "Broth-based soups"],
+    "notes": "Iron + protein focus to counter blood loss, probiotics for gut comfort."
+  },
+  "2": {
+    "phase": "Menstruation",
+    "recommend": ["Chicken", "Kidney beans", "Lettuce + cucumber salad with hummus", "Almonds", "Yakult", "Peppermint tea"],
+    "notes": "Gentle fibre and probiotics; peppermint for cramps."
+  },
+  "3": {
+    "phase": "Menstruation",
+    "recommend": ["Cod", "Black beans", "Brown rice", "Carrots + peppers", "Chia seeds pudding"],
+    "notes": "Omega-3 alternative (chia) plus iron-rich beans."
+  },
+  "4": {
+    "phase": "Menstruation",
+    "recommend": ["Eggs", "Couscous with chickpeas", "Paneer curry (mild)", "Berries", "Yakult"],
+    "notes": "Protein + iron support with easy-to-digest meals."
+  },
+  "5": {
+    "phase": "Menstruation (end)",
+    "recommend": ["Chicken wrap (wholegrain)", "Cucumber + hummus", "Dark chocolate square", "Almonds"],
+    "notes": "Transition into follicular; fibre + iron balance."
+  },
+  "6": {
+    "phase": "Follicular",
+    "recommend": ["Eggs", "Paneer with peppers", "Bulgur wheat salad with chickpeas", "Grapes", "Yakult"],
+    "notes": "Magnesium + fibre for steady energy."
+  },
+  "7": {
+    "phase": "Follicular",
+    "recommend": ["Chicken with barley", "Cucumber + lettuce", "Apricot + fig snack", "Chia seeds"],
+    "notes": "Steady carbs and iron support rising oestrogen."
+  },
+  "8": {
+    "phase": "Follicular",
+    "recommend": ["Cod with brown rice", "Carrots + cabbage", "Banana + peanut butter", "Yakult"],
+    "notes": "Protein + gut support for higher activity days."
+  },
+  "9": {
+    "phase": "Follicular",
+    "recommend": ["Paneer stir fry", "Berries", "Couscous with chickpeas + peppers", "Pecans"],
+    "notes": "Balanced fibre and protein, sweet fruit for energy."
+  },
+  "10": {
+    "phase": "Follicular",
+    "recommend": ["Eggs + oats", "Chicken + wholegrain wrap", "Cantaloupe", "Yakult"],
+    "notes": "Energising mix; oats + protein for satiety."
+  },
+  "11": {
+    "phase": "Follicular",
+    "recommend": ["Cod with garlic + lemon", "Carrots", "Apple with almond butter", "Yakult"],
+    "notes": "Light protein; probiotic and magnesium support."
+  },
+  "12": {
+    "phase": "Ovulation window",
+    "recommend": ["Eggs + avocado", "Chickpea salad with cucumber + lettuce", "Kiwi + citrus", "Paneer"],
+    "notes": "Folate-rich beans + citrus for ovulation support."
+  },
+  "13": {
+    "phase": "Ovulation window",
+    "recommend": ["Tuna salad (lettuce, cucumber)", "Bulgur wheat + peppers", "Berries", "Yakult"],
+    "notes": "Fibre and antioxidants help manage peak oestrogen."
+  },
+  "14": {
+    "phase": "Ovulation (peak)",
+    "recommend": ["Cod with brown rice", "Carrots + garlic", "Cherries", "Paneer"],
+    "notes": "Folate + antioxidants; easy protein."
+  },
+  "15": {
+    "phase": "Early luteal",
+    "recommend": ["Chicken with wholegrain pasta", "Apple + hazelnuts", "Yakult", "Peppermint tea"],
+    "notes": "Complex carbs + probiotics stabilise mood."
+  },
+  "16": {
+    "phase": "Luteal",
+    "recommend": ["Egg + cucumber salad", "Black beans with rice", "Dark chocolate square", "Chia seeds"],
+    "notes": "Protein + magnesium help with early PMS symptoms."
+  },
+  "17": {
+    "phase": "Luteal",
+    "recommend": ["Paneer curry with carrots + peppers", "Couscous side", "Banana snack", "Yakult"],
+    "notes": "Magnesium + probiotic support."
+  },
+  "18": {
+    "phase": "Luteal",
+    "recommend": ["Cod with bulgur wheat", "Cabbage + garlic stir fry", "Dates + pecans", "Peppermint tea"],
+    "notes": "Protein + fibre + soothing tea for bloat/cramps."
+  },
+  "19": {
+    "phase": "Luteal",
+    "recommend": ["Chicken with brown rice", "Chickpeas + carrots", "Kiwi", "Yakult"],
+    "notes": "Balanced macros with extra vitamin C for iron."
+  },
+  "20": {
+    "phase": "Luteal",
+    "recommend": ["Paneer with peppers", "Lettuce + hummus wrap", "Apple", "Chia seeds pudding"],
+    "notes": "Steady carbs and magnesium-rich seeds."
+  },
+  "21": {
+    "phase": "Mid-luteal",
+    "recommend": ["Eggs + barley", "Kidney beans + couscous", "Peach", "Yakult"],
+    "notes": "Complex carbs + probiotics for gut and mood."
+  },
+  "22": {
+    "phase": "Late luteal (PMS prone)",
+    "recommend": ["Tuna wrap with lettuce + cucumber", "Carrots with hummus", "Dark chocolate", "Peppermint tea"],
+    "notes": "Anti-cramp foods with steady carbs."
+  },
+  "23": {
+    "phase": "Late luteal",
+    "recommend": ["Paneer with garlic + onion", "Brown rice + chickpeas", "Cherries", "Yakult"],
+    "notes": "Protein + fibre; probiotic for gut support."
+  },
+  "24": {
+    "phase": "Late luteal",
+    "recommend": ["Cod with couscous", "Cabbage + peppers", "Fig + hazelnuts", "Peppermint tea"],
+    "notes": "Gentle, iron-friendly foods before bleed."
+  },
+  "25": {
+    "phase": "Late luteal",
+    "recommend": ["Egg + avocado toast", "Apple + pecans", "Chia seeds pudding", "Yakult"],
+    "notes": "Magnesium + healthy fats; gut support."
+  },
+  "26": {
+    "phase": "Late luteal",
+    "recommend": ["Chicken with barley", "Carrot + cucumber sticks with hummus", "Berries", "Peppermint tea"],
+    "notes": "Craving-friendly snacks, fibre for digestion."
+  },
+  "27": {
+    "phase": "Late luteal (PMS peak)",
+    "recommend": ["Paneer stir fry with garlic", "Wholegrain pasta + black beans", "Dates", "Yakult"],
+    "notes": "Comforting protein + carbs; probiotic support."
+  },
+  "28": {
+    "phase": "Late luteal → Menstruation",
+    "recommend": ["Cod with brown rice", "Carrots + cabbage", "Banana", "Peppermint tea"],
+    "notes": "Iron prep + soothing foods for transition."
+  }
+}

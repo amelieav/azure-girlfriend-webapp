@@ -1,0 +1,198 @@
+{
+  "1": {
+    "most_present_hormone": "None (hormones are at their lowest)",
+    "lowest_hormone": "Estrogen and Progesterone",
+    "increasing": ["FSH"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "Menstruation begins. Energy low, cramps and fatigue common, mood may dip."
+  },
+  "2": {
+    "most_present_hormone": "None (hormones are at their lowest)",
+    "lowest_hormone": "Estrogen and Progesterone",
+    "increasing": ["FSH"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "Continued menstruation. Low energy, cramps and tiredness, emotional sensitivity."
+  },
+  "3": {
+    "most_present_hormone": "None (hormones are at their lowest)",
+    "lowest_hormone": "Estrogen and Progesterone",
+    "increasing": ["FSH"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "Bleeding continues, symptoms like pain and fatigue may ease slightly."
+  },
+  "4": {
+    "most_present_hormone": "None (hormones are at their lowest)",
+    "lowest_hormone": "Estrogen and Progesterone",
+    "increasing": ["FSH"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "End of menstruation approaches for many. Energy slowly rising."
+  },
+  "5": {
+    "most_present_hormone": "None (hormones are at their lowest)",
+    "lowest_hormone": "Estrogen and Progesterone",
+    "increasing": ["FSH"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "Menstruation finishes or nearly done. Energy begins to improve."
+  },
+  "6": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen", "FSH"],
+    "decreasing": [],
+    "effects_on_human": "Follicular phase. Energy rises, mood improves, skin clears."
+  },
+  "7": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen", "FSH"],
+    "decreasing": [],
+    "effects_on_human": "Body prepares follicles. Rising energy and social mood."
+  },
+  "8": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen"],
+    "decreasing": ["FSH"],
+    "effects_on_human": "Cervical mucus may change. Energy and confidence improve."
+  },
+  "9": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen"],
+    "decreasing": ["FSH"],
+    "effects_on_human": "Fertile window approaches. Libido and focus often improve."
+  },
+  "10": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen"],
+    "decreasing": ["FSH"],
+    "effects_on_human": "Energy high, mood positive, body prepares for ovulation."
+  },
+  "11": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen"],
+    "decreasing": ["FSH"],
+    "effects_on_human": "Fertility increases, libido may rise. Confidence strong."
+  },
+  "12": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen"],
+    "decreasing": [],
+    "effects_on_human": "Fertile window. Energy, mood, and sociability high."
+  },
+  "13": {
+    "most_present_hormone": "Estrogen",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["Estrogen", "LH"],
+    "decreasing": [],
+    "effects_on_human": "Peak fertility. Libido, mood, and energy at peak."
+  },
+  "14": {
+    "most_present_hormone": "Luteinizing Hormone (LH surge)",
+    "lowest_hormone": "Progesterone",
+    "increasing": ["LH (surge)", "Estrogen (peaks then drops)"],
+    "decreasing": ["Estrogen (after egg release)"],
+    "effects_on_human": "Ovulation. Highest fertility, possible ovulation twinge, energy strong."
+  },
+  "15": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Progesterone"],
+    "decreasing": ["LH", "FSH"],
+    "effects_on_human": "Early luteal phase. Slight temp rise. Mood calm, body prepares for pregnancy."
+  },
+  "16": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Progesterone"],
+    "decreasing": ["LH", "FSH"],
+    "effects_on_human": "Stable mood, some may feel calmer or slower."
+  },
+  "17": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Progesterone"],
+    "decreasing": [],
+    "effects_on_human": "Energy steady, body nurturing uterine lining."
+  },
+  "18": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Progesterone"],
+    "decreasing": [],
+    "effects_on_human": "Appetite may rise, energy moderate."
+  },
+  "19": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Progesterone"],
+    "decreasing": [],
+    "effects_on_human": "Calm but less sharp focus, body in receptive mode."
+  },
+  "20": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Progesterone"],
+    "decreasing": [],
+    "effects_on_human": "Some may feel relaxed, others sluggish."
+  },
+  "21": {
+    "most_present_hormone": "Progesterone",
+    "lowest_hormone": "FSH and LH",
+    "increasing": [],
+    "decreasing": [],
+    "effects_on_human": "Uterus at peak readiness. Energy may plateau."
+  },
+  "22": {
+    "most_present_hormone": "Progesterone (starting to drop)",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Prostaglandins (towards menstruation)"],
+    "decreasing": ["Progesterone", "Estrogen"],
+    "effects_on_human": "Premenstrual changes begin. Mood may shift, cravings appear."
+  },
+  "23": {
+    "most_present_hormone": "Progesterone (starting to drop)",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Prostaglandins"],
+    "decreasing": ["Progesterone", "Estrogen"],
+    "effects_on_human": "PMS may include bloating, breast tenderness, headaches."
+  },
+  "24": {
+    "most_present_hormone": "Progesterone (dropping)",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Prostaglandins"],
+    "decreasing": ["Progesterone", "Estrogen"],
+    "effects_on_human": "Energy lowers, mood irritability possible."
+  },
+  "25": {
+    "most_present_hormone": "Progesterone (dropping)",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Prostaglandins"],
+    "decreasing": ["Progesterone", "Estrogen"],
+    "effects_on_human": "Fatigue, emotional sensitivity, period cravings."
+  },
+  "26": {
+    "most_present_hormone": "Progesterone (dropping)",
+    "lowest_hormone": "FSH and LH",
+    "increasing": ["Prostaglandins"],
+    "decreasing": ["Progesterone", "Estrogen"],
+    "effects_on_human": "Premenstrual cramps, skin changes, low mood possible."
+  },
+  "27": {
+    "most_present_hormone": "Progesterone (very low)",
+    "lowest_hormone": "Estrogen and Progesterone (both dropping)",
+    "increasing": ["Prostaglandins"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "Strong PMS possible. Irritability, bloating, headaches, low energy."
+  },
+  "28": {
+    "most_present_hormone": "Progesterone (very low)",
+    "lowest_hormone": "Estrogen and Progesterone",
+    "increasing": ["Prostaglandins"],
+    "decreasing": ["Estrogen", "Progesterone"],
+    "effects_on_human": "If no pregnancy, lining sheds. Body prepares for period. Low mood and cramps common."
+  }
+}
