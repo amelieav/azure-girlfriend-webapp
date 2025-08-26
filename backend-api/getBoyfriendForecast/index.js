@@ -1,3 +1,8 @@
+
+const fs = require("fs");
+const path = require("path");
+const { OpenAI } = require("openai");
+
 let debugLog = [];
 function debug(msg, obj) {
     if (obj !== undefined) {
@@ -8,25 +13,17 @@ function debug(msg, obj) {
     console.log(msg, obj);
 }
 
-const openai = new OpenAI({
-        apiKey: process.env.OPENAI_API_KEY,
-});
-const guide = loadJSON("Daily_Guide_Amelie.json");
-console.log("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
-const fs = require("fs");
-const path = require("path");
-const { OpenAI } = require("openai");
-
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
-
 function loadJSON(filePath) {
     const raw = fs.readFileSync(path.resolve(__dirname, "..", "data", "clean", filePath), "utf-8");
     return JSON.parse(raw);
 }
 
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+});
+
 debug("[getBoyfriendForecast] Loading Daily_Guide_Amelie.json...");
+const guide = loadJSON("Daily_Guide_Amelie.json");
 debug("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
 
 module.exports = async function (context, req) {
