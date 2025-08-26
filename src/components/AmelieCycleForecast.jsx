@@ -14,22 +14,26 @@ const AmelieForecast = ({ cycleDay }) => {
     const fetchSections = async () => {
       setLoading(true);
       setError(null);
+      console.log(`[AmelieCycleForecast] Fetching sections for cycleDay: ${cycleDay}`);
       try {
         const sectionKeys = ["sleep", "feels", "productivity", "food"];
         const results = {};
 
         for (const section of sectionKeys) {
+          console.log(`[AmelieCycleForecast] Fetching section: ${section}`);
           const res = await fetch(
             `/api/getAmelieForecast?cycleDay=${cycleDay}&section=${section}`
           );
           if (!res.ok) throw new Error(`Failed on section: ${section}`);
           const data = await res.json();
+          console.log(`[AmelieCycleForecast] Data for ${section}:`, data);
           results[section] = data.result;
         }
 
         setSections(results);
+        console.log(`[AmelieCycleForecast] All sections loaded:`, results);
       } catch (err) {
-        console.error(err);
+        console.error("[AmelieCycleForecast] ERROR:", err);
         setError("Failed to load Amélie’s forecast.");
       } finally {
         setLoading(false);

@@ -11,15 +11,20 @@ function loadJSON(filePath) {
     return JSON.parse(raw);
 }
 
+console.log("[getBoyfriendForecast] Loading Daily_Guide_Amelie.json...");
 const guide = loadJSON("Daily_Guide_Amelie.json");
+console.log("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
 
 module.exports = async function (context, req) {
+    console.log("[getBoyfriendForecast] Function triggered");
     const day = parseInt(req.query.cycleDay || "1");
     const section = req.query.section;
-
+    console.log(`[getBoyfriendForecast] cycleDay: ${day}, section: ${section}`);
 
     const dayData = guide[day] || null;
+    console.log("[getBoyfriendForecast] dayData:", JSON.stringify(dayData));
     if (!dayData) {
+        console.error(`[getBoyfriendForecast] No data found for cycle day ${day}`);
         context.res = {
             status: 404,
             body: { error: `No data found for cycle day ${day}` }
@@ -32,6 +37,7 @@ module.exports = async function (context, req) {
         symptoms: dayData["Physical Symptoms"] || "(no symptoms data)",
         override_note: dayData["Activity Notes"] || "(no override note)",
     };
+    console.log("[getBoyfriendForecast] ctx:", JSON.stringify(ctx));
 
     const prompt = `
 You are a kind assistant helping a boyfriend understand how to support his girlfriend based on her cycle data.
@@ -52,6 +58,7 @@ Options:
 Return JSON like:
 { "result": "Write one clear paragraph here." }
 `;
+    console.log("[getBoyfriendForecast] prompt:", prompt);
 
     try {
         const result = await openai.chat.completions.create({
@@ -59,11 +66,13 @@ Return JSON like:
             messages: [{ role: "user", content: prompt }],
             response_format: { type: "json_object" }
         });
+        console.log("[getBoyfriendForecast] OpenAI result:", JSON.stringify(result));
 
         const output = JSON.parse(result.choices[0].message.content);
+        console.log("[getBoyfriendForecast] output:", JSON.stringify(output));
         context.res = { body: output };
     } catch (err) {
-        console.error("OpenAI or function error:", err);
+        console.error("[getBoyfriendForecast] ERROR:", err);
         context.res = {
             status: 500,
             body: {
