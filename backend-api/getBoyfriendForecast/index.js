@@ -18,18 +18,19 @@ function loadJSON(filePath) {
     return JSON.parse(raw);
 }
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
-
-debug("[getBoyfriendForecast] Loading Daily_Guide_Amelie.json...");
-const guide = loadJSON("Daily_Guide_Amelie.json");
-debug("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
-
 module.exports = async function (context, req) {
     debugLog = [];
-    debug("[getBoyfriendForecast] Function triggered");
+    let guide;
+    let openai;
     try {
+        debug("[getBoyfriendForecast] Function triggered");
+        openai = new OpenAI({
+            apiKey: process.env.OPENAI_API_KEY,
+        });
+        debug("[getBoyfriendForecast] Loading Daily_Guide_Amelie.json...");
+        guide = loadJSON("Daily_Guide_Amelie.json");
+        debug("[getBoyfriendForecast] Loaded guide keys:", Object.keys(guide));
+
         const day = parseInt(req.query.cycleDay || "1");
         const section = req.query.section;
         debug(`[getBoyfriendForecast] cycleDay: ${day}, section: ${section}`);
